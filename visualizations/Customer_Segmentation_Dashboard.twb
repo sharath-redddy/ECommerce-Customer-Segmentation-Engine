@@ -1,0 +1,771 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (segment_output_cleaned)' inline='true' name='federated.1oxhh1a1pseudc12b930009q4ikz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='segment_output_cleaned' name='excel-direct.1x2nb3t15s7ks011s0mma035read'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/srgud/Downloads/segment_output_cleaned.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1x2nb3t15s7ks011s0mma035read' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='6'>
+            <column datatype='string' name='User_ID' ordinal='0' />
+            <column datatype='integer' name='Recency_Days' ordinal='1' />
+            <column datatype='integer' name='Frequency' ordinal='2' />
+            <column datatype='real' name='Monetary' ordinal='3' />
+            <column datatype='integer' name='Average_Rating' ordinal='4' />
+            <column datatype='string' name='Aggregated_Reviews' ordinal='5' />
+            <column datatype='real' name='Average_Sentiment' ordinal='6' />
+            <column datatype='string' name='Sentiment_Label' ordinal='7' />
+            <column datatype='integer' name='Cluster_ID' ordinal='8' />
+            <column datatype='real' name='PCA_1' ordinal='9' />
+            <column datatype='real' name='PCA_2' ordinal='10' />
+            <column datatype='string' name='Strategic_Segment' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L10001:no:A1:L10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[User_ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>User_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recency_Days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recency_Days]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Recency_Days</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Frequency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Frequency]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Frequency</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monetary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Monetary]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Monetary</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average_Rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average_Rating]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Average_Rating</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregated_Reviews</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Aggregated_Reviews]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Aggregated_Reviews</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average_Sentiment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average_Sentiment]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Average_Sentiment</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sentiment_Label</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sentiment_Label]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Sentiment_Label</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cluster_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cluster_ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Cluster_ID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PCA_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PCA_1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PCA_1</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PCA_2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PCA_2]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PCA_2</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Strategic_Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Strategic_Segment]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Strategic_Segment</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Aggregated Reviews' datatype='string' name='[Aggregated_Reviews]' role='dimension' type='nominal' />
+      <column caption='Average Rating' datatype='integer' name='[Average_Rating]' role='measure' type='quantitative' />
+      <column caption='Average Sentiment' datatype='real' name='[Average_Sentiment]' role='measure' type='quantitative' />
+      <column caption='Cluster ID' datatype='integer' name='[Cluster_ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' datatype-customized='true' default-format='C16393%' name='[Monetary]' role='measure' type='quantitative' />
+      <column caption='Pca 1' datatype='real' name='[PCA_1]' role='measure' type='quantitative' />
+      <column caption='Pca 2' datatype='real' name='[PCA_2]' role='measure' type='quantitative' />
+      <column caption='Recency Days' datatype='integer' name='[Recency_Days]' role='measure' type='quantitative' />
+      <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+      <column caption='Strategic Segment' datatype='string' name='[Strategic_Segment]' role='dimension' type='nominal' />
+      <column caption='User ID' datatype='string' name='[User_ID]' role='dimension' type='nominal' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_AD772CE66F434D348A913782F8F79B2E]' role='measure' type='quantitative' />
+      <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/srgud/AppData/Local/Temp/TableauTemp/#TableauTemp_01gnri71l0gixg14r5f4v0c9uc52.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/01/2026 05:24:16 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>User_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[User_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>User_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recency_Days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recency_Days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recency_Days</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Frequency</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Frequency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Frequency</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Monetary</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Monetary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Monetary</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1572</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average_Rating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Average_Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average_Rating</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aggregated_Reviews</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aggregated_Reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aggregated_Reviews</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9197</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average_Sentiment</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Average_Sentiment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average_Sentiment</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2946</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sentiment_Label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sentiment_Label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sentiment_Label</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cluster_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cluster_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cluster_ID</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PCA_1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PCA_1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PCA_1</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5568</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PCA_2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PCA_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PCA_2</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5674</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Strategic_Segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Strategic_Segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Strategic_Segment</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_AD772CE66F434D348A913782F8F79B2E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Sentiment_Label:nk]' type='palette'>
+            <map to='#a18e77'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+            <map to='#e1270e'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_AD772CE66F434D348A913782F8F79B2E'>
+            <properties context=''>
+              <relation connection='excel-direct.1x2nb3t15s7ks011s0mma035read' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:L10001:no:A1:L10001:0' header='yes' outcome='6'>
+                  <column datatype='string' name='User_ID' ordinal='0' />
+                  <column datatype='integer' name='Recency_Days' ordinal='1' />
+                  <column datatype='integer' name='Frequency' ordinal='2' />
+                  <column datatype='real' name='Monetary' ordinal='3' />
+                  <column datatype='integer' name='Average_Rating' ordinal='4' />
+                  <column datatype='string' name='Aggregated_Reviews' ordinal='5' />
+                  <column datatype='real' name='Average_Sentiment' ordinal='6' />
+                  <column datatype='string' name='Sentiment_Label' ordinal='7' />
+                  <column datatype='integer' name='Cluster_ID' ordinal='8' />
+                  <column datatype='real' name='PCA_1' ordinal='9' />
+                  <column datatype='real' name='PCA_2' ordinal='10' />
+                  <column datatype='string' name='Strategic_Segment' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Monetary Value by Sentiment Segment'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (segment_output_cleaned)' name='federated.1oxhh1a1pseudc12b930009q4ikz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oxhh1a1pseudc12b930009q4ikz'>
+            <column datatype='integer' datatype-customized='true' default-format='C16393%' name='[Monetary]' role='measure' type='quantitative' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Monetary]' derivation='Sum' name='[sum:Monetary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1oxhh1a1pseudc12b930009q4ikz].[none:Sentiment_Label:nk]' />
+              <wedge-size column='[federated.1oxhh1a1pseudc12b930009q4ikz].[sum:Monetary:qk]' />
+              <size column='[federated.1oxhh1a1pseudc12b930009q4ikz].[sum:Monetary:qk]' />
+              <text column='[federated.1oxhh1a1pseudc12b930009q4ikz].[sum:Monetary:qk]' />
+              <text column='[federated.1oxhh1a1pseudc12b930009q4ikz].[none:Sentiment_Label:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+                <format attr='text-orientation' value='0' />
+                <format attr='text-align' value='left' />
+                <format attr='vertical-align' value='bottom' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-style' value='italic' />
+                <format attr='text-decoration' value='none' />
+                <format attr='font-weight' value='normal' />
+                <format attr='font-size' value='12' />
+                <format attr='font-family' value='Cambria' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#f5f5f5' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1oxhh1a1pseudc12b930009q4ikz].[none:Sentiment_Label:nk]</field>
+                  <field>[federated.1oxhh1a1pseudc12b930009q4ikz].[sum:Monetary:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Neutral&quot;</value>
+                <value>8241</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='39' y='35' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1oxhh1a1pseudc12b930009q4ikz].[none:Sentiment_Label:nk]</field>
+                  <field>[federated.1oxhh1a1pseudc12b930009q4ikz].[sum:Monetary:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Negative&quot;</value>
+                <value>1562</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-18' y='35' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1oxhh1a1pseudc12b930009q4ikz].[none:Sentiment_Label:nk]</field>
+                  <field>[federated.1oxhh1a1pseudc12b930009q4ikz].[sum:Monetary:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Positive&quot;</value>
+                <value>170040</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-300' y='481' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{D3652862-FDDD-416E-B3CD-9B7564831C93}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Monetary Value by Sentiment Segment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1oxhh1a1pseudc12b930009q4ikz].[sum:Monetary:qk]' type='size' />
+            <card pane-specification-id='3' param='[federated.1oxhh1a1pseudc12b930009q4ikz].[none:Sentiment_Label:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1oxhh1a1pseudc12b930009q4ikz].[:Measure Names]</field>
+            <field>[federated.1oxhh1a1pseudc12b930009q4ikz].[none:Calculation_0314468144824329:qk]</field>
+            <field>[federated.1oxhh1a1pseudc12b930009q4ikz].[none:Sentiment_Label:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F693E980-EE0D-4109-98CC-934C84C5A9FA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Monetary Value by Sentiment Segment' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
