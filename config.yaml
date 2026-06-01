@@ -1,0 +1,18 @@
+data:
+  stream_url: "https://raw.githubusercontent.com/Arham-Aalam/ML-progress/master/amazon_co-ecommerce_sample.csv"
+  raw_path: "data/raw/amazon_ecommerce_raw.csv"
+  output_csv: "outputs/csv/segment_output.csv"
+  output_summary: "outputs/reports/cluster_summary.csv"
+  output_img_dir: "outputs/images/"
+
+pipeline:
+  rolling_months: 12
+  random_state: 42
+  max_k: 6
+
+features:
+  clustering_cols:
+    - "Recency_Days"
+    - "Frequency"
+    - "Monetary"
+    - "Average_Sentiment"
