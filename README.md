@@ -7,6 +7,17 @@ This project analyzes e-commerce customer behavior using RFM (Recency, Frequency
 
 The project follows a modular and production-oriented architecture with separate components for data preprocessing, sentiment analysis, clustering, visualization, testing, and dashboard reporting.
 
+## Dashboard Preview
+<img width="1633" height="1024" alt="E-Commerce Customer Segmentation Dashboard" src="https://github.com/user-attachments/assets/4e46b2fb-6e8d-4d1b-81ad-150dc73c1d0a" />
+
+The Tableau dashboard provides an interactive view of:
+
+* Customer segment distribution
+* Revenue contribution by segment
+* Sentiment performance by segment
+* Customer-level drill-down analysis
+* Strategic business insights for decision-makers
+
 ## Business Problem
 
 E-commerce companies often collect large volumes of transaction and review data but struggle to convert that information into actionable customer insights.
@@ -95,13 +106,3 @@ The pipeline processes raw customer transaction and review data through multiple
 * Segmentation enables personalized marketing and loyalty programs
 * Data-driven customer intelligence improves business decision-making
 
-## Dashboard Preview
-<img width="1633" height="1024" alt="E-Commerce Customer Segmentation Dashboard" src="https://github.com/user-attachments/assets/4e46b2fb-6e8d-4d1b-81ad-150dc73c1d0a" />
-
-The Tableau dashboard provides an interactive view of:
-
-* Customer segment distribution
-* Revenue contribution by segment
-* Sentiment performance by segment
-* Customer-level drill-down analysis
-* Strategic business insights for decision-makers
