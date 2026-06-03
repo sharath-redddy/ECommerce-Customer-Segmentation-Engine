@@ -1,41 +1,107 @@
-# E-Commerce End-to-End Master Segmentation Engine
+# E-Commerce Customer Segmentation Engine
+⭐ End-to-end Data Analytics Project | Machine Learning | NLP | Tableau | Streamlit
 
-[![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
-[![ML Framework](https://img.shields.io/badge/machine%20learning-scikit--learn-orange.svg)](https://scikit-learn.org/)
-[![BI Analytics](https://img.shields.io/badge/analytics-Tableau-orange.svg)](https://public.tableau.com/)
-[![UI App](https://img.shields.io/badge/interface-Streamlit-red.svg)](https://streamlit.io/)
+An end-to-end customer analytics and segmentation platform built using Python, Machine Learning, NLP, Tableau, and Streamlit.
 
-An enterprise-grade customer analytics platform that orchestrates raw marketplace transaction parsing, evaluates text sentiment profiles via NLP lexicons, handles multidimensional feature scaling, executes automated K-Means clustering optimizations, and provisions interactive live monitoring layers.
+This project analyzes e-commerce customer behavior using RFM (Recency, Frequency, Monetary) metrics and customer review sentiment to identify meaningful customer segments. By combining sentiment analysis with K-Means clustering, the system helps businesses understand customer value, detect at-risk users, and design targeted retention and marketing strategies.
 
-## 📐 System Architecture
-The system execution workflow is completely decoupled into dedicated lifecycle operations for production scalability:
+The project follows a modular and production-oriented architecture with separate components for data preprocessing, sentiment analysis, clustering, visualization, testing, and dashboard reporting.
 
-1. **Workspace Environment Provisioner:** Dynamically configures directory paths and configuration boundaries (`config.yaml`).
-2. **Text Processing NLP Core:** Integrates `TextBlob` semantic modeling to calculate customer review sentiment polarity.
-3. **Variance Scaling & Transformation:** Leverages `StandardScaler` arrays to balance multi-unit feature spaces (`Recency_Days`, `Frequency`, `Monetary`, `Average_Sentiment`) smoothly prior to vector processing.
-4. **Algorithmic K-Means Optimizer:** Fits and scales cluster assignments automatically across dynamic client profiles.
-5. **UI Application Layer:** Provisions a functional `Streamlit` configuration template (`app.py`) for live interactive database exploration.
+## Business Problem
 
----
+E-commerce companies often collect large volumes of transaction and review data but struggle to convert that information into actionable customer insights.
 
-## 📁 Repository Directory Layout
-```text
-├── config.yaml                     # Machine learning pipeline hyper-parameters
-├── requirements.txt                # Complete environment library bindings
-├── app.py                          # Streamlit UI front-end app server script
-├── README.md                       # Comprehensive system documentation
-├── src/                            # Production pipeline module operations
-│   ├── preprocessing.py            # Extraction and aggregation transformations
-│   ├── sentiment.py                # NLP text evaluation engine
-│   ├── clustering.py               # Auto-tuning K-Means iteration core model
-│   ├── visualization.py            # Pipeline diagnostic plotting mechanisms
-│   └── pipeline.py                 # Core orchestration execution manager
-├── tests/                          # Quality assurance system test suite
-│   ├── test_preprocessing.py       # Preprocessing unit checks
-│   └── test_clustering.py          # Machine learning stability tests
-├── outputs/                        # Processed target dataset outputs
-│   └── csv/
-│       └── segment_output.csv
-└── visualizations/                 # Enterprise business intelligence deliverables
-    ├── Customer_Segmentation_Dashboard.twbx  # Packaged Tableau workbook asset
-    └── sentiment_chart.png         # Executive dashboard reporting preview
+The goal of this project is to:
+
+* Identify high-value customer groups
+* Detect customers at risk of churn
+* Understand customer sentiment patterns
+* Support data-driven marketing and retention strategies
+* Visualize customer behavior through an interactive business dashboard
+
+## Solution Overview
+
+The pipeline processes raw customer transaction and review data through multiple analytical stages:
+
+1. Data Cleaning and Preprocessing
+
+   * Handles missing values and inconsistent records
+   * Generates customer-level analytical features
+
+2. RFM Feature Engineering
+
+   * Recency: Days since last purchase
+   * Frequency: Number of purchases
+   * Monetary: Total customer spending
+
+3. Sentiment Analysis
+
+   * Uses TextBlob NLP techniques
+   * Extracts sentiment polarity scores from customer reviews
+
+4. Feature Scaling
+
+   * Standardizes numerical variables using StandardScaler
+
+5. Customer Segmentation
+
+   * Applies K-Means clustering
+   * Groups customers into strategic behavioral segments
+
+6. Business Intelligence Layer
+
+   * Interactive Tableau dashboard
+   * Customer performance monitoring
+   * Segment-level business insights
+
+## Key Features
+
+* Modular production-style Python architecture
+* Automated data preprocessing pipeline
+* RFM customer analysis
+* NLP-based sentiment scoring
+* K-Means customer segmentation
+* Tableau business intelligence dashboard
+* Streamlit application interface
+* Unit testing for core pipeline modules
+* Configuration-driven workflow using YAML
+
+## Technology Stack
+
+* Python
+* Pandas
+* NumPy
+* Scikit-Learn
+* TextBlob
+* Matplotlib
+* Seaborn
+* Tableau
+* Streamlit
+* Pytest
+
+## Project Outcomes
+
+* Segmented customer populations into strategic behavioral groups
+* Identified high-value customer segments with the highest revenue contribution
+* Evaluated customer satisfaction through sentiment analysis
+* Delivered interactive dashboard reporting for business stakeholders
+* Created a reusable analytics framework suitable for future customer intelligence initiatives
+
+## Business Insights
+
+* Premium customer segments contribute the majority of revenue
+* Customer sentiment can be used as an additional indicator of customer value
+* At-risk customers can be identified for targeted retention campaigns
+* Segmentation enables personalized marketing and loyalty programs
+* Data-driven customer intelligence improves business decision-making
+
+## Dashboard Preview
+<img width="1633" height="1024" alt="E-Commerce Customer Segmentation Dashboard" src="https://github.com/user-attachments/assets/4e46b2fb-6e8d-4d1b-81ad-150dc73c1d0a" />
+
+The Tableau dashboard provides an interactive view of:
+
+* Customer segment distribution
+* Revenue contribution by segment
+* Sentiment performance by segment
+* Customer-level drill-down analysis
+* Strategic business insights for decision-makers
